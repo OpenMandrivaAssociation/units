@@ -1,12 +1,12 @@
 %define	name	units
-%define version 1.86
-%define release %mkrel 2
+%define version 1.87
+%define release %mkrel 1
 
 Summary:	A utility for converting amounts from one unit to another
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-Source0:	ftp://ftp.gnu.org/pub/gnu/units/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.gnu.org/pub/gnu/units/%{name}-%{version}.tar.gz
 Url:		http://www.gnu.org/software/units/units.html
 License:	GPL
 Group:		Office
