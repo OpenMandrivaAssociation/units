@@ -11,7 +11,6 @@ Url:		http://www.gnu.org/software/units/units.html
 License:	GPL
 Group:		Office
 BuildRequires:	ncurses-devel readline-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The ‘units' program converts quantities expressed in various scales to
