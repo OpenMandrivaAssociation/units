@@ -1,6 +1,6 @@
 %define	name	units
 %define version 1.87
-%define release %mkrel 1
+%define release %mkrel 2
 
 Summary:	A utility for converting amounts from one unit to another
 Name:		%{name}
