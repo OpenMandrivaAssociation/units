@@ -1,6 +1,6 @@
 %define	name	units
-%define version 1.87
-%define release %mkrel 5
+%define version 1.88
+%define release %mkrel 1
 
 Summary:	A utility for converting amounts from one unit to another
 Name:		%{name}
@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 Source0:	ftp://ftp.gnu.org/pub/gnu/units/%{name}-%{version}.tar.gz
 Url:		http://www.gnu.org/software/units/units.html
-License:	GPL
+License:	GPLv2
 Group:		Office
 BuildRequires:	ncurses-devel readline-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -24,14 +24,12 @@ are handled using a functional notation.
 %setup -q
 
 %build
-%configure
+%configure2_5x
 %make
-
 make check
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %makeinstall
 
 %post
@@ -49,5 +47,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/units.dat
 %{_infodir}/*
 %{_mandir}/man1/units.1*
-
-
