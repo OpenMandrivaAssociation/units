@@ -1,17 +1,13 @@
-%define	name	units
-%define version 1.88
-%define release %mkrel 3
-
 Summary:	A utility for converting amounts from one unit to another
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		units
+Version:	2.01
+Release:	1
 Source0:	ftp://ftp.gnu.org/pub/gnu/units/%{name}-%{version}.tar.gz
 Url:		http://www.gnu.org/software/units/units.html
 License:	GPLv2
 Group:		Office
-BuildRequires:	ncurses-devel readline-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	ncurses-devel
+BuildRequires:	readline-devel
 
 %description
 The ‘units' program converts quantities expressed in various scales to
@@ -26,23 +22,14 @@ are handled using a functional notation.
 %build
 %configure2_5x
 %make
+
+%check
 make check
 
 %install
-rm -rf %{buildroot}
-%makeinstall
-
-%post
-%_install_info %{name}.info
-
-%preun
-%_remove_install_info %{name}.info
-
-%clean
-rm -rf %{buildroot}
+%makeinstall_std
 
 %files
-%defattr(-,root,root)
 %{_bindir}/units
 %{_datadir}/units.dat
 %{_infodir}/*
