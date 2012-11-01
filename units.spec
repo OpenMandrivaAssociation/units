@@ -31,7 +31,8 @@ make check
 
 %files
 %dir %{_datadir}/units
-%{_bindir}/units
+%{_bindir}/units*
 %{_datadir}/units/*.units
+%{_datadir}/units/*.map
 %{_infodir}/*
 %{_mandir}/man1/units.1*
