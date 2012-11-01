@@ -30,7 +30,8 @@ make check
 %makeinstall_std
 
 %files
+%dir %{_datadir}/units
 %{_bindir}/units
-%{_datadir}/*.units
+%{_datadir}/units/*.units
 %{_infodir}/*
 %{_mandir}/man1/units.1*
