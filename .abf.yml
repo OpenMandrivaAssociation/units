@@ -1,2 +1,4 @@
+removed_sources:
+  units-1.88.tar.gz: 0b65e9d9542d0c20082b0e9562fea42b1b02825e
 sources:
-  "units-1.88.tar.gz": 0b65e9d9542d0c20082b0e9562fea42b1b02825e
+  units-2.11.tar.gz: 67addf963821875506e6660b4d8e9fbb1aec577a
