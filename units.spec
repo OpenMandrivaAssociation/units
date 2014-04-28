@@ -26,11 +26,11 @@ are handled using a functional notation.
 make check
 
 %install
-%makeinstall
+%makeinstall_std
 
 %files
-%{_bindir}/units
-%{_datadir}/units.dat
+%{_bindir}/units*
+%{_datadir}/units*
 %{_infodir}/*
 %{_mandir}/man1/units.1*
 
