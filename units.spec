@@ -2,7 +2,7 @@ Summary:	A utility for converting amounts from one unit to another
 
 Name:		units
 Version:	2.11
-Release:	2
+Release:	3
 Source0:	ftp://ftp.gnu.org:21/pub/gnu/units/%{name}-%{version}.tar.gz
 Url:		http://www.gnu.org/software/units/units.html
 License:	GPLv2
