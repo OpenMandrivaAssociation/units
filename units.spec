@@ -1,8 +1,7 @@
 Summary:	A utility for converting amounts from one unit to another
-
 Name:		units
-Version:	2.11
-Release:	5
+Version:	2.14
+Release:	1
 Source0:	ftp://ftp.gnu.org:21/pub/gnu/units/%{name}-%{version}.tar.gz
 Url:		http://www.gnu.org/software/units/units.html
 License:	GPLv2
@@ -21,8 +20,10 @@ are handled using a functional notation.
 %setup -q
 
 %build
-%configure2_5x
+%configure
 %make
+
+%check
 make check
 
 %install
@@ -33,6 +34,3 @@ make check
 %{_datadir}/units*
 %{_infodir}/*
 %{_mandir}/man1/units.1*
-
-
-
