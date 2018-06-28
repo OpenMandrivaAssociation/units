@@ -31,7 +31,10 @@ make check
 
 %files
 %dir %{_var}/lib/units
+%dir %{_datadir}/units
 %{_bindir}/units*
+%{_datadir}/units/*.units
+%{_datadir}/units/*.txt
 %{_var}/lib/units/currency.units
 %{_infodir}/*
 %{_mandir}/man1/units.1*
