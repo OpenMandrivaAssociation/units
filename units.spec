@@ -30,7 +30,8 @@ make check
 %makeinstall_std
 
 %files
+%dir %{_var}/lib/units
 %{_bindir}/units*
-%{_datadir}/units*
+%{_var}/lib/units/currency.units
 %{_infodir}/*
 %{_mandir}/man1/units.1*
