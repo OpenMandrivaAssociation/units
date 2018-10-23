@@ -1,7 +1,7 @@
 Summary:	A utility for converting amounts from one unit to another
 Name:		units
-Version:	2.17
-Release:	2
+Version:	2.18
+Release:	1
 Source0:	ftp://ftp.gnu.org:21/pub/gnu/units/%{name}-%{version}.tar.gz
 Url:		http://www.gnu.org/software/units/units.html
 License:	GPLv2
@@ -17,17 +17,17 @@ Fahrenheit to Celsius. Temperature and other nonlinear conversions
 are handled using a functional notation.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
-%make
+%make_build
 
 %check
 make check
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %dir %{_var}/lib/units
