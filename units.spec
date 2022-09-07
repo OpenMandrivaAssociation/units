@@ -1,6 +1,6 @@
 Summary:	A utility for converting amounts from one unit to another
 Name:		units
-Version:	2.21
+Version:	2.22
 Release:	1
 Source0:	ftp://ftp.gnu.org:21/pub/gnu/units/%{name}-%{version}.tar.gz
 Url:		http://www.gnu.org/software/units/units.html
@@ -28,6 +28,9 @@ make check
 
 %install
 %make_install
+# replace symlink to buildroot
+rm -f %{buildroot}%{_datadir}/units/currency.units
+ln -s %{_var}/lib/units/currency.units %{buildroot}%{_datadir}/units/
 
 %files
 %dir %{_var}/lib/units
