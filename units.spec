@@ -1,13 +1,13 @@
 Summary:	A utility for converting amounts from one unit to another
 Name:		units
 Version:	2.22
-Release:	1
+Release:	2
 Source0:	ftp://ftp.gnu.org:21/pub/gnu/units/%{name}-%{version}.tar.gz
 Url:		http://www.gnu.org/software/units/units.html
 License:	GPLv2
 Group:		Office
-BuildRequires:	ncurses-devel
-BuildRequires:	readline-devel
+BuildRequires:	pkgconfig(ncurses)
+BuildRequires:	pkgconfig(readline)
 
 %description
 The â€˜units' program converts quantities expressed in various scales to
@@ -39,5 +39,5 @@ ln -s %{_var}/lib/units/currency.units %{buildroot}%{_datadir}/units/
 %{_datadir}/units/*.units
 %{_datadir}/units/*.txt
 %{_var}/lib/units/currency.units
-%{_infodir}/*
-%{_mandir}/man1/units.1*
+%doc %{_infodir}/*
+%doc %{_mandir}/man1/units.1*
