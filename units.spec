@@ -3,7 +3,7 @@ Name:		units
 Version:	2.22
 Release:	3
 Source0:	ftp://ftp.gnu.org:21/pub/gnu/units/%{name}-%{version}.tar.gz
-Url:		http://www.gnu.org/software/units/units.html
+Url:		https://www.gnu.org/software/units/units.html
 License:	GPLv2
 Group:		Office
 BuildRequires:	pkgconfig(ncurses)
