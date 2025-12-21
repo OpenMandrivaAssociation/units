@@ -6,6 +6,11 @@ Source0:	ftp://ftp.gnu.org:21/pub/gnu/units/%{name}-%{version}.tar.gz
 Url:		https://www.gnu.org/software/units/units.html
 License:	GPLv2
 Group:		Office
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(ncurses)
 BuildRequires:	pkgconfig(readline)
 
